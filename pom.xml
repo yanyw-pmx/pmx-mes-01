@@ -14,6 +14,7 @@
         <version>2.0.1.RELEASE</version>
     </parent>
 
+    <!--spring boot-->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -56,8 +57,40 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
+        <!--springboot视图解析器-->
+        <!-- freemarker模板引擎视图 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
+        <!-- 热部署，不用重启 ，这个在这里不需要-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- jsp解析器 -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--json封装类对象数组-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
+        </dependency>
+
+
     </dependencies>
 
+
+    <!--spring generetor插件-->
     <build>
         <plugins>
             <plugin>
