@@ -3,6 +3,8 @@ package Boot.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/*generetor自动生成*/
 public class UserGeneretorExample {
     protected String orderByClause;
 

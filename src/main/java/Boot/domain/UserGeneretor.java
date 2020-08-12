@@ -2,6 +2,9 @@ package Boot.domain;
 
 import java.io.Serializable;
 
+
+
+/*generetor自动生成，与User这个类没有关系*/
 public class UserGeneretor implements Serializable {
     private Integer userId;
 
