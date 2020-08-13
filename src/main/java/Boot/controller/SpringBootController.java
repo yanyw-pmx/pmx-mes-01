@@ -51,8 +51,7 @@ public class SpringBootController {
         else{
             Gson gson = new Gson();
             /*将json封装为实例化对象数组*/
-            all = gson.fromJson(userlist, new TypeToken<List<User>>() {
-            }.getType());
+            all = gson.fromJson(userlist, new TypeToken<List<User>>() {}.getType());
             for(User users:all){
                 System.out.println(users);
             }

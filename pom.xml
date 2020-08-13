@@ -88,8 +88,7 @@
 
 
     </dependencies>
-
-
+    
     <!--spring generetor插件-->
     <build>
         <plugins>
